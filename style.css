@@ -1,0 +1,235 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1DB954;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222326;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1DB954;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+}
+
+.btn-secondary {
+    background-color: #535353;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+/* Error Message */
+.error {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+/* Song List */
+.song-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.song-list li {
+    background-color: #181818;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.song-list li:hover {
+    background-color: #282828;
+}
+
+.song-list li span {
+    display: block;
+    color: #b3b3b3;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+table th {
+    background-color: #282828;
+    font-weight: bold;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+table tbody tr:hover {
+    background-color: #282828;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #1a1a1a;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DB954;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    color: #1DB954;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+}
+
+.main-content h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content table {
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
