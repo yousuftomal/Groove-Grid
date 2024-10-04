@@ -28,7 +28,7 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
 
 // Fetch artist profile if user is an artist
 if ($user_type == 'Artist') {
-    $sql = "SELECT bio, genre FROM ArtistProfile WHERE artist_id = ?";
+    $sql = "SELECT bio, genre FROM user WHERE artist_id = ?";
     if ($stmt = mysqli_prepare($conn, $sql)) {
         mysqli_stmt_bind_param($stmt, "i", $user_id);
         if (mysqli_stmt_execute($stmt)) {
