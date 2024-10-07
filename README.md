@@ -39,4 +39,4 @@ This project is licensed under the MIT License.
 
 ## Contributors
 - **Yousuf Tomal** (GitHub: [yousuftomal](https://github.com/yousuftomal))
-- **Afrida Afaf** (currently no GitHub account)
+- **Afrida Afaf** (GitHub: [afridaafaf](https://github.com/afridaafaf))
